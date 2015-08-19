@@ -10,6 +10,7 @@
     function SidebarController($state, routerHelper) {
         var vm = this;
         var states = routerHelper.getStates();
+        console.log(states);
         vm.isCurrent = isCurrent;
 
         activate();

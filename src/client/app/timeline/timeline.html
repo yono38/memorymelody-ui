@@ -1,0 +1,25 @@
+<section id="timeline-view" class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Timeline</h1>
+                      <timeline>
+					    <timeline-event ng-repeat="event in tl.concerts">
+					      <timeline-badge class="{{event.badgeClass}}">
+					        <i class="glyphicon {{event.badgeIconClass}}"></i>
+					      </timeline-badge>
+					      <timeline-panel class="{{event.badgeClass}}">
+					        <timeline-heading>
+					          <h4>{{event.date | date: 'shortDate'}} - <strong>{{event.artist.name}}</strong></h4>
+					        </timeline-heading>
+					        <h5>{{event.venue.name}}</h5>
+					        <p ng-show="event.notes">{{event.notes}}</p>
+					      </timeline-panel>
+					    </timeline-event>
+					  </timeline>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

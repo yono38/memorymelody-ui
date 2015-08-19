@@ -3,6 +3,8 @@
 node_modules/
 bower_components/
 .DS_Store
+build/
+report/
 
 # other
 .tmp
